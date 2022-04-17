@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="info">
+                <h2>Personal data</h2>
+                <div>
+                    <label for="firstName">First name: </label><br />
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="Corneliu"
+                        size="40"
+                        required
+                    />
+                    <div class="error" id="firstNameError"></div>
+                </div>
+                <div>
+                    <label for="lastName">Last name: </label><br />
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Magurean"
+                        size="40"
+                    />
+                    <div class="error" id="lastNameError"></div>
+                </div>
+                <div>
+                    <label for="email">Email: </label><br />
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="cornel@gmail.com"
+                        size="40"
+                    />
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div>
+                    <label for="city">City: </label><br />
+                    <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        placeholder="Chisinau"
+                        size="40"
+                    />
+                    <div class="error" id="cityError"></div>
+                </div>
+                <div>
+                    <label for="phone">Phone: </label><br />
+                    <input
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        placeholder="+373-123456"
+                        size="40"
+                    />
+                    <div class="error" id="phoneError"></div>
+                </div>
+                <div>
+                    <label for="profession">Profession: </label><br />
+                    <input
+                        type="text"
+                        id="profession"
+                        name="profession"
+                        placeholder="Programmer"
+                        size="40"
+                        required
+                    />
+                    <div class="error" id="professionError"></div>
+                </div>
+                <!--
+                <div>
+                    <button type="button" id="submitButton">Submit</button>
+                </div> -->
+            </div>
+            <div class="education">
+                <div>
+                    <button id="btn1">+</button>
+                    <span>Add Education</span>
+                </div>
+
+                <form id="edu">
+                    <div>
+                        <label for="educ">Education Title </label><br />
+                        <input
+                            type="text"
+                            id="educ"
+                            name="educ"
+                            placeholder="Education title"
+                            size="40"
+                        />
+                        <div class="error" id="educError"></div>
+                    </div>
+                    <div>
+                        <label for="educ_t">Education Type </label><br />
+                        <select name="educ_t" id="educ_t" aria-placeholder="40">
+                            <option value="bachelor">Bachelor</option>
+                            <option value="superior">Superior</option>
+                            <option value="lyceum">Lyceum</option>
+                        </select>
+
+                        <div class="error" id="educ_tError"></div>
+                    </div>
+                    <div>
+                        <label for="date">Granduation Date: </label> <br />
+                        <input type="date" id="date" name="date" />
+                        <div class="error" id="dateError"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="job">
+                <div>
+                    <button id="btn2">+</button>
+                    <span>Add Job</span>
+                </div>
+
+                <form id="jobs">
+                    <div>
+                        <label for="job_n">Job name </label><br />
+                        <input
+                            type="text"
+                            id="job_n"
+                            name="job_n"
+                            placeholder="Job name"
+                            size="40"
+                        />
+                        <div class="error" id="job_nError"></div>
+                    </div>
+                    <div>
+                        <label for="sjob"> Start date </label> <br />
+                        <input type="date" id="sjob" name="sjob" />
+                        <div class="error" id="sjobError"></div>
+                    </div>
+
+                    <div>
+                        <label for="ejob"> End date </label> <br />
+                        <input type="date" id="ejob" name="ejob" />
+                        <div class="error" id="ejobError"></div>
+                    </div>
+                    <div>
+                        <label for="city">City </label><br />
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="City"
+                            size="40"
+                        />
+                        <div class="error" id="cityError"></div>
+                    </div>
+                    <div>
+                        <label for="comp">Company name </label><br />
+                        <input
+                            type="text"
+                            id="comp"
+                            name="comp"
+                            placeholder="Company name"
+                            size="40"
+                        />
+                        <div class="error" id="compError"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="buton">
+                <button type="button" id="submitButton">Validate Data</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="firstNameDisplay"></div>
+            <div id="lastNameDisplay"></div>
+            <div id="emailDisplay"></div>
+            <div id="cityDisplay"></div>
+            <div id="phoneDisplay"></div>
+            <div id="professionDisplay"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
